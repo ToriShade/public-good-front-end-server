@@ -13,6 +13,7 @@ const getStoresByZipCode = async (zipQuery = ['43017', '43016', '43002', '43065'
     try {
         const response = await pool.query('SELECT storeid, storelat, storelong, storename, storelongname, storezipcode, storestate FROM retailers WHERE storezipcode = ANY ($1)', [zipQuery]);
         console.log(response.rows);
+        return response.rows
     } catch (err) {
         console.error('Error Occurred', err);
     }
