@@ -1,0 +1,13 @@
+{
+  "name": "front-end-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-generator": "^4.16.1",
+    "node-postgres": "^0.6.2",
+    "pg": "^8.7.3"
+  }
+}
